@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEMO SHOP | 示範選物店</title>
+<meta name="description" content="Layout prototype with a fictional brand. Not a real store.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announce" role="note">示範橫幅：加入會員享專屬購物金（範例文字）</div>
+
+  <header class="site-header">
+    <div class="header-icons">
+      <button class="icon-btn" aria-label="切換語言"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      <button class="icon-btn" aria-label="搜尋"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15 15l6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+      <button class="icon-btn" aria-label="會員"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="8" r="4.5" fill="currentColor"/><path d="M3 21c0-5 4-7 9-7s9 2 9 7z" fill="currentColor"/></svg></button>
+      <button class="icon-btn" aria-label="購物袋"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 8h16l-1.5 13h-13z" fill="currentColor"/><path d="M8 8V6a4 4 0 0 1 8 0v2" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    </div>
+    <a class="logo" href="#top" id="top" aria-label="DEMO SHOP">
+      <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="4"/><path d="M8 20a12 12 0 0 1 24 0" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+      <span>DEMO SHOP</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">選單</button>
+    <nav id="main-nav" class="main-nav" aria-label="主選單">
+      <a href="#" class="has-sub">自有系列</a>
+      <a href="#">最新上架</a>
+      <a href="#" class="has-sub">系列產品</a>
+      <a href="#">人氣商品</a>
+      <a href="#" class="has-sub">特別企劃</a>
+      <a href="#" class="has-sub">所有商品</a>
+      <a href="#" class="has-sub">品牌總覽</a>
+      <a href="#">直播推薦</a>
+      <a href="#">換季特賣</a>
+      <a href="#">門市資訊</a>
+      <a href="#" class="wrap-row">會員優惠</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-label="主視覺">
+      <div class="ph ph-a" role="img" aria-label="示範主視覺圖一"><span>HERO IMAGE 1</span></div>
+      <div class="ph ph-b" role="img" aria-label="示範主視覺圖二"><span>HERO IMAGE 2</span></div>
+    </section>
+
+    <section class="products container" aria-label="商品列表">
+      <div class="grid grid-5" id="product-grid"></div>
+      <div class="center"><a class="btn" href="#">查看更多</a></div>
+    </section>
+
+    <section class="duo container" aria-label="活動圖片">
+      <div class="ph ph-c" role="img" aria-label="示範活動圖一"><span>PROMO 1</span></div>
+      <div class="ph ph-d" role="img" aria-label="示範活動圖二"><span>PROMO 2</span></div>
+    </section>
+
+    <section class="container brands-wrap" aria-labelledby="h-brands-a">
+      <h2 class="sec-title" id="h-brands-a">FEATURED BRANDS</h2>
+      <div class="grid grid-3" id="brands-a"></div>
+    </section>
+
+    <section class="container brands-wrap" aria-labelledby="h-brands-b">
+      <h2 class="sec-title" id="h-brands-b">IMPORTED BRANDS</h2>
+      <div class="grid grid-3" id="brands-b"></div>
+    </section>
+
+    <section class="container project" aria-labelledby="h-project">
+      <h2 class="sec-title" id="h-project">PROJECT</h2>
+      <div class="project-row">
+        <div class="ph ph-e tall" role="img" aria-label="示範企劃圖"><span>PROJECT IMAGE</span></div>
+        <div class="project-text">
+          <h3>示範企劃標題</h3>
+          <p class="sub">這是一段範例副標題文字</p>
+          <p>這裡是範例內文，用來展示企劃區塊的版面。</p>
+          <p>實際內容請替換為你自己的文案。</p>
+          <a class="btn btn-sm" href="#">Limited</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container channel" aria-labelledby="h-channel">
+      <h2 class="sec-title" id="h-channel">CHANNEL</h2>
+      <div class="video-ph" role="img" aria-label="示範影片區塊"><span>VIDEO PLACEHOLDER</span></div>
+    </section>
+
+    <section class="container brands-wrap" aria-labelledby="h-select">
+      <h2 class="sec-title" id="h-select">SELECT BRANDS</h2>
+      <div class="grid grid-4" id="select-brands"></div>
+    </section>
+
+    <section class="container store" aria-label="門市資訊">
+      <div class="map-ph" role="img" aria-label="示範地圖示意"><span>MAP PLACEHOLDER</span></div>
+      <div class="store-info">
+        <div class="store-tag">DEMO SHOP 示範門市</div>
+        <p class="addr">範例縣市範例區範例路 1 號</p>
+        <p class="hours-label">OPEN-CLOSE</p>
+        <p class="hours">14:00 P.M.<br>|<br>22:00 P.M.</p>
+        <p class="transit">捷運｜範例站 步行 5 分鐘</p>
+        <p class="transit">公車｜範例路線</p>
+      </div>
+    </section>
+
+    <section class="container styling" aria-labelledby="h-styling">
+      <h2 class="sec-title" id="h-styling">STYLING</h2>
+      <div class="grid grid-4 tall-grid" id="styling-grid"></div>
+      <div class="center"><a class="btn" href="#">查看更多</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-cols">
+      <div>
+        <h4>Board</h4>
+        <ul>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">購物流程</a></li>
+          <li><a href="#">退貨政策</a></li>
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">條款與細則</a></li>
+          <li><a href="#">海外訂單服務</a></li>
+          <li><a href="#">付款與運送方式</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <p>Service time : 10:00 am - 06:00 pm</p>
+        <p>Stores opening time : 14:00 pm - 22:00 pm</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook" class="soc">f</a>
+          <a href="#" aria-label="Instagram" class="soc">◎</a>
+          <a href="#" aria-label="Chat" class="soc">☰</a>
+        </div>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <p>合作聯繫：hello@example.com</p>
+        <p>統一編號：00000000</p>
+        <p>營業人名稱：示範公司</p>
+      </div>
+    </div>
+    <div class="container pay-row" aria-label="付款方式">
+      <span class="pay">CARD</span><span class="pay">CARD</span><span class="pay">CARD</span>
+      <span class="pay">STORE</span><span class="pay">STORE</span><span class="pay">E-PAY</span><span class="pay">PAYMENTS</span>
+    </div>
+    <div class="container lang-row">
+      <button class="lang" aria-label="語言：繁體中文">🌐 繁體中文 ⌄</button>
+    </div>
+    <p class="disclaimer">This is an independent layout prototype with a fictional brand. It is not affiliated with any real store.</p>
+  </footer>
+
+  <button class="to-top" aria-label="回到頂端" id="to-top">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+
+<script>
+  // Never place BotBonnie API tokens, API secrets, or CRM keys in static frontend code.
+  const BOTBONNIE_PAGE_ID = "page-3ddfc11e30f54a9ba9904113";
+
+  window.BBAsyncInit = function () {
+    BB.init({
+      appId: BOTBONNIE_PAGE_ID
+    });
+  };
+</script>
+<script async type="text/javascript" src="https://asset.botbonnie.com/sdk/sdk.js"></script>
+</body>
+</html>
